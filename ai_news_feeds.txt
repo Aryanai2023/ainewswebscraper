@@ -1,0 +1,50 @@
+# AI News RSS Feeds
+# Curated list of RSS feeds for tracking AI news
+
+# TechCrunch - AI Category
+https://techcrunch.com/category/artificial-intelligence/feed/
+
+# TechCrunch - Main Feed (we'll filter for AI)
+https://techcrunch.com/feed/
+
+# VentureBeat - AI News
+https://venturebeat.com/category/ai/feed/
+
+# MIT Technology Review - AI
+https://www.technologyreview.com/topic/artificial-intelligence/feed
+
+# The Verge - AI
+https://www.theverge.com/ai-artificial-intelligence/rss/index.xml
+
+# Ars Technica - AI
+https://feeds.arstechnica.com/arstechnica/technology-lab
+
+# AI News Aggregators
+https://artificialintelligence-news.com/feed/
+
+# Hacker News (we'll filter for AI)
+https://news.ycombinator.com/rss
+
+# Google AI Blog (if available)
+https://ai.googleblog.com/feeds/posts/default
+
+# OpenAI Blog
+https://openai.com/blog/rss.xml
+
+# DeepMind Blog  
+https://deepmind.google/blog/rss.xml
+
+# Anthropic News (if available)
+https://www.anthropic.com/news/rss
+
+# AI-focused publications
+https://www.artificialintelligence-news.com/feed/
+
+# Machine Learning Mastery
+https://machinelearningmastery.com/feed/
+
+# Towards Data Science (Medium)
+https://towardsdatascience.com/feed
+
+# Analytics Vidhya
+https://www.analyticsvidhya.com/feed/
