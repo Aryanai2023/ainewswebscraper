@@ -1,0 +1,331 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                    🏆 SOURCE CREDIBILITY WEIGHTING                           ║
+║                           NEW FEATURE ADDED                                  ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+## ✨ WHAT'S NEW
+
+Your toolkit now includes **ENHANCED TRACKERS** with **SOURCE CREDIBILITY WEIGHTING**!
+
+Articles from more accredited sources (MIT Tech Review, Nature, OpenAI Blog, etc.) 
+automatically receive higher relevance scores.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🎯 THE PROBLEM IT SOLVES
+
+**Before**: All sources treated equally
+- TechCrunch article: Score 75
+- Random blog article: Score 75
+- MIT Tech Review article: Score 75
+
+**After**: Credibility-weighted scoring
+- TechCrunch article: Score 75 × 1.2 = 90
+- Random blog article: Score 75 × 0.9 = 68
+- MIT Tech Review article: Score 75 × 1.5 = 100 ⭐
+
+**Result**: Premier sources automatically rank higher!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🏆 SOURCE TIER SYSTEM
+
+TIER 1 (×1.5): 🏆 Premier Academic & Research
+   • MIT Technology Review
+   • Nature, Science journals
+   • Stanford HAI, Berkeley AI Research
+
+TIER 2 (×1.4): ⭐ Company Research Blogs (Primary Sources)
+   • OpenAI Blog
+   • DeepMind Blog
+   • Anthropic News
+   • Google AI Blog
+   • Meta AI, Microsoft Research
+
+TIER 3 (×1.3): ⭐ Established Tech Journalism
+   • The Verge
+   • Ars Technica
+   • Wired
+   • IEEE Spectrum
+
+TIER 4 (×1.2): 📰 Major Business News
+   • TechCrunch
+   • VentureBeat
+   • Reuters, Bloomberg, WSJ
+
+TIER 5 (×1.0): 📄 General Tech News
+   • Hacker News
+   • AI News sites
+   • Tech blogs
+
+TIER 6 (×0.9): ❓ Unknown Sources
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📥 NEW FILES
+
+**Enhanced AI News Tracker**:
+✓ ai_news_tracker_enhanced.py          Main enhanced tracker
+✓ ai_news_feeds_enhanced.txt            Premium sources by tier
+✓ SOURCE_CREDIBILITY_GUIDE.md           Complete documentation
+
+**Original Trackers (Still Available)**:
+✓ ai_news_tracker.py                    Standard AI tracker
+✓ deep_tech_tracker.py                  Deep Tech tracker
+✓ rss_scraper.py                        Generic scraper
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🚀 QUICK START
+
+# Install (if not already done)
+pip install feedparser requests
+
+# Run enhanced tracker
+python ai_news_tracker_enhanced.py
+
+# Output files:
+# - ai_news_credibility_weighted.json
+# - ai_news_credibility_weighted.csv
+# - ai_news_credibility_report.html
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 💡 USAGE EXAMPLES
+
+# Academic research (only premier sources)
+python ai_news_tracker_enhanced.py -t 2
+
+# Include quality journalism
+python ai_news_tracker_enhanced.py -t 3
+
+# All sources with business news
+python ai_news_tracker_enhanced.py -t 4
+
+# High-quality articles only
+python ai_news_tracker_enhanced.py -s 60
+
+# Combine filters
+python ai_news_tracker_enhanced.py -t 3 -s 50
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📊 WHAT YOU GET
+
+**Console Output**:
+Shows credibility info for each article:
+
+1. 🏆 [95/100] OpenAI Announces GPT-5
+   📰 OpenAI Blog | Tier 2 (High)
+   📈 Base: 68 → Final: 95 (×1.4)
+   🏢 OpenAI, Microsoft
+
+2. 🏆 [92/100] Quantum Computing Breakthrough
+   📰 MIT Technology Review | Tier 1 (High)
+   📈 Base: 61 → Final: 92 (×1.5)
+
+**CSV Export**:
+Includes all credibility fields:
+- source_tier (1-6)
+- source_type (Academic, Primary Source, etc.)
+- source_credibility (High, Medium, Standard)
+- source_multiplier (1.5, 1.4, etc.)
+- base_score (before weighting)
+- final_score (after weighting)
+
+**HTML Report**:
+Beautiful report with:
+- Color-coded tier badges
+- Visual credibility indicators
+- Score breakdowns
+- Source type labels
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🎓 USE CASES
+
+**Academic Research**:
+python ai_news_tracker_enhanced.py -t 2 -s 50
+→ Only peer-reviewed and primary sources
+
+**Investment Due Diligence**:
+python ai_news_tracker_enhanced.py -t 4 -s 40
+→ Company blogs + business news
+
+**Daily Digest**:
+python ai_news_tracker_enhanced.py -s 30
+→ All sources, credibility-prioritized
+
+**Breaking News**:
+python ai_news_tracker_enhanced.py -t 2 -d 1
+→ Direct from companies, last 24 hours
+
+**Quality Content Curation**:
+python ai_news_tracker_enhanced.py -t 3 -s 45
+→ High-quality journalism only
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## ✨ KEY BENEFITS
+
+✅ **Automatic Quality Prioritization**
+   Premier sources rank higher automatically
+
+✅ **Transparent Scoring**
+   See both base and weighted scores
+
+✅ **Flexible Filtering**
+   Filter by tier for specific needs
+
+✅ **Still Comprehensive**
+   All sources included, just prioritized
+
+✅ **Research-Friendly**
+   Easy to find citeable sources
+
+✅ **Time-Saving**
+   Focus on highest quality first
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📚 STATISTICS YOU'LL SEE
+
+Source Tier Breakdown:
+   Tier 1 (Premier Academic): 15 articles (20.5%)
+   Tier 2 (Company Research): 22 articles (30.1%)
+   Tier 3 (Tech Journalism): 18 articles (24.7%)
+   Tier 4 (Business News): 12 articles (16.4%)
+   Tier 5 (General): 6 articles (8.2%)
+
+Credibility Distribution:
+   High: 37 articles (50.7%)      # Tiers 1-2
+   Medium: 30 articles (41.1%)    # Tiers 3-4
+   Standard: 6 articles (8.2%)    # Tiers 5-6
+
+Source Type Breakdown:
+   Academic: 15 articles
+   Primary Source: 22 articles
+   Tech Journalism: 18 articles
+   Business News: 12 articles
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🔄 SHOULD YOU SWITCH?
+
+**Use Enhanced Tracker (ai_news_tracker_enhanced.py) When**:
+✓ Need high-quality sources
+✓ Academic/professional research
+✓ Building reports that need citations
+✓ Limited time (prioritize quality)
+✓ Want credibility transparency
+
+**Use Standard Tracker (ai_news_tracker.py) When**:
+✓ Exploring diverse perspectives
+✓ Discovery mode
+✓ Don't want bias toward mainstream
+✓ Research requires breadth over depth
+
+**Use Both**:
+✓ Run enhanced for daily digest
+✓ Run standard for comprehensive scan
+✓ Compare results to ensure no gaps
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🎯 EXAMPLE WORKFLOW
+
+**Morning Routine**:
+# High-priority AI news from premier sources
+python ai_news_tracker_enhanced.py -t 3 -d 1 -s 50
+
+# Open report
+open ai_news_credibility_report.html
+
+# Read top 10 articles (all high credibility)
+
+**Weekly Research**:
+# Comprehensive scan with credibility weighting
+python ai_news_tracker_enhanced.py -d 7
+
+# Export to CSV for analysis
+# Sort by source_tier and final_score in Excel
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📖 LEARN MORE
+
+Read the complete documentation:
+→ SOURCE_CREDIBILITY_GUIDE.md
+
+This includes:
+- Detailed tier explanations
+- Real-world examples
+- Customization guide
+- FAQ
+- Best practices
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📁 COMPLETE UPDATED FILE LIST
+
+**NEW - Enhanced with Credibility**:
+  ✓ ai_news_tracker_enhanced.py          Enhanced tracker ⭐ NEW
+  ✓ ai_news_feeds_enhanced.txt           Premium feeds ⭐ NEW
+  ✓ SOURCE_CREDIBILITY_GUIDE.md          Documentation ⭐ NEW
+  ✓ ENHANCED_FEATURES_SUMMARY.txt        This file ⭐ NEW
+
+**ORIGINAL - Still Available**:
+  ✓ ai_news_tracker.py                   Standard AI tracker
+  ✓ ai_news_feeds.txt                    Standard feeds
+  ✓ deep_tech_tracker.py                 Deep Tech tracker
+  ✓ deep_tech_feeds.txt                  Deep Tech feeds
+  ✓ rss_scraper.py                       Generic scraper
+
+**DOCUMENTATION**:
+  ✓ MASTER_README.txt                    Complete overview
+  ✓ START_HERE.txt                       Getting started
+  ✓ TRACKER_COMPARISON.txt               Tool comparison
+  ✓ AI_NEWS_TRACKER_GUIDE.md             AI tracker guide
+  ✓ DEEP_TECH_GUIDE.md                   Deep Tech guide
+  ✓ QUICK_REFERENCE.txt                  Quick commands
+  ✓ DEEP_TECH_QUICK_REF.txt              Deep Tech commands
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🎉 SUMMARY
+
+You now have:
+
+✅ **THREE trackers**:
+   1. Enhanced AI News (credibility-weighted) ⭐ NEW
+   2. Standard AI News (equal weighting)
+   3. Deep Tech Sectors (12 sectors)
+
+✅ **Source credibility weighting**:
+   - 6-tier system
+   - Transparent multipliers
+   - Flexible filtering
+
+✅ **Premium source curation**:
+   - MIT Tech Review, Nature, Science
+   - OpenAI, DeepMind, Anthropic blogs
+   - The Verge, Ars Technica, Wired
+   - TechCrunch, VentureBeat, Reuters
+
+✅ **Complete documentation**:
+   - Detailed guides
+   - Use case examples
+   - Best practices
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Ready to track AI news with credibility weighting! 🚀
+
+**Recommended First Step**:
+python ai_news_tracker_enhanced.py
+
+Then open: ai_news_credibility_report.html
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

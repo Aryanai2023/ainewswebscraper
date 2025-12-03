@@ -1,0 +1,126 @@
+# Enhanced AI News RSS Feeds (Credibility-Weighted)
+# Organized by source tier for credibility weighting
+
+# ============================================================================
+# TIER 1: Premier Academic & Research Sources (Multiplier: 1.5x)
+# ============================================================================
+# Most credible sources - academic journals and premier research institutions
+
+# MIT Technology Review - AI
+https://www.technologyreview.com/topic/artificial-intelligence/feed
+
+# Nature - AI/Machine Learning
+https://www.nature.com/natmachintell.rss
+
+# Science Magazine - AI/Robotics
+https://www.science.org/rss/news_current.xml
+
+# Stanford HAI (Human-Centered AI)
+https://hai.stanford.edu/news/feed
+
+# Berkeley AI Research (BAIR)
+https://bair.berkeley.edu/blog/feed.xml
+
+
+# ============================================================================
+# TIER 2: Company Research Blogs (Multiplier: 1.4x)
+# ============================================================================
+# Primary sources - direct from AI companies and research labs
+
+# OpenAI Blog
+https://openai.com/blog/rss.xml
+
+# DeepMind Blog
+https://deepmind.google/blog/rss.xml
+
+# Anthropic News
+https://www.anthropic.com/news/rss
+
+# Google AI Blog
+https://ai.googleblog.com/feeds/posts/default
+
+# Meta AI Research
+https://ai.meta.com/blog/rss/
+
+# Microsoft Research AI
+https://www.microsoft.com/en-us/research/feed/
+
+# AWS Machine Learning Blog
+https://aws.amazon.com/blogs/machine-learning/feed/
+
+
+# ============================================================================
+# TIER 3: Established Tech Journalism (Multiplier: 1.3x)
+# ============================================================================
+# High-quality tech journalism with editorial standards
+
+# The Verge - AI
+https://www.theverge.com/ai-artificial-intelligence/rss/index.xml
+
+# Ars Technica - AI & Machine Learning
+https://feeds.arstechnica.com/arstechnica/technology-lab
+
+# Wired - AI
+https://www.wired.com/feed/tag/ai/latest/rss
+
+# IEEE Spectrum - AI
+https://spectrum.ieee.org/feeds/artificial-intelligence.rss
+
+
+# ============================================================================
+# TIER 4: Major Business & Tech News (Multiplier: 1.2x)
+# ============================================================================
+# Established business news sources with tech/AI coverage
+
+# TechCrunch - AI
+https://techcrunch.com/category/artificial-intelligence/feed/
+
+# VentureBeat - AI
+https://venturebeat.com/category/ai/feed/
+
+# Reuters - Technology News
+https://www.reutersagency.com/feed/?taxonomy=best-topics&post_type=best
+
+# Bloomberg Technology
+# (Check for specific AI/ML RSS if available)
+
+# Wall Street Journal - Tech
+# (Premium content - check availability)
+
+
+# ============================================================================
+# TIER 5: General Tech News & Community (Multiplier: 1.0x)
+# ============================================================================
+# General tech news, aggregators, and community sources
+
+# Hacker News (filtered for AI)
+https://news.ycombinator.com/rss
+
+# Artificial Intelligence News
+https://artificialintelligence-news.com/feed/
+
+# Machine Learning Mastery
+https://machinelearningmastery.com/feed/
+
+# Towards Data Science (Medium)
+https://towardsdatascience.com/feed
+
+# Analytics Vidhya
+https://www.analyticsvidhya.com/feed/
+
+# AI Trends
+https://www.aitrends.com/feed/
+
+
+# ============================================================================
+# ADDITIONAL QUALITY SOURCES
+# ============================================================================
+
+# ACM TechNews
+# https://technews.acm.org/rss
+
+# Quanta Magazine - AI/Computer Science
+https://www.quantamagazine.org/feed/
+
+# The Gradient (ML Research)
+https://thegradient.pub/rss/

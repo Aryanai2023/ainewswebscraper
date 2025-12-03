@@ -1,0 +1,217 @@
+# Deep Tech RSS Feeds
+# Curated list for tracking deep technology innovations
+
+# ============================================================================
+# QUANTUM COMPUTING
+# ============================================================================
+
+# MIT Technology Review - Quantum Computing
+https://www.technologyreview.com/topic/quantum-computing/feed
+
+# Quantum Computing Report
+https://quantumcomputingreport.com/feed/
+
+# Physics World - Quantum
+https://physicsworld.com/c/quantum/feed/
+
+# IBM Research Blog
+https://research.ibm.com/blog/rss
+
+# ============================================================================
+# BIOTECHNOLOGY & LIFE SCIENCES
+# ============================================================================
+
+# Nature Biotechnology
+https://www.nature.com/nbt.rss
+
+# STAT News - Biotech
+https://www.statnews.com/feed/
+
+# FierceBiotech
+https://www.fiercebiotech.com/rss/xml
+
+# BioSpace
+https://www.biospace.com/rss
+
+# Genetic Engineering & Biotechnology News
+https://www.genengnews.com/feed/
+
+# SynBioBeta
+https://synbiobeta.com/feed/
+
+# ============================================================================
+# SPACE TECHNOLOGY & AEROSPACE
+# ============================================================================
+
+# SpaceNews
+https://spacenews.com/feed/
+
+# NASA Breaking News
+https://www.nasa.gov/rss/dyn/breaking_news.rss
+
+# Space.com
+https://www.space.com/feeds/all
+
+# The Space Review
+https://www.thespacereview.com/rss.xml
+
+# Ars Technica - Space
+https://feeds.arstechnica.com/arstechnica/science
+
+# ============================================================================
+# ROBOTICS & AUTOMATION
+# ============================================================================
+
+# IEEE Spectrum - Robotics
+https://spectrum.ieee.org/feeds/robotics.rss
+
+# The Robot Report
+https://www.therobotreport.com/feed/
+
+# Robotics Business Review
+https://www.roboticsbusinessreview.com/feed/
+
+# RoboHub
+http://robohub.org/feed/
+
+# ============================================================================
+# ADVANCED MATERIALS & NANOTECHNOLOGY
+# ============================================================================
+
+# Nanowerk
+https://www.nanowerk.com/nanotechnology-news.rss
+
+# Materials Today
+https://www.materialstoday.com/rss/
+
+# Phys.org - Nanotechnology
+https://phys.org/rss-feed/nanotechnology-news/
+
+# ============================================================================
+# ENERGY & CLEANTECH
+# ============================================================================
+
+# Greentech Media
+https://www.greentechmedia.com/rss.xml
+
+# CleanTechnica
+https://cleantechnica.com/feed/
+
+# Energy Storage News
+https://www.energy-storage.news/feed/
+
+# PV Magazine
+https://www.pv-magazine.com/feed/
+
+# ============================================================================
+# SEMICONDUCTORS & HARDWARE
+# ============================================================================
+
+# Semiconductor Engineering
+https://semiengineering.com/feed/
+
+# EE Times
+https://www.eetimes.com/feed/
+
+# AnandTech
+https://www.anandtech.com/rss/
+
+# Tom's Hardware
+https://www.tomshardware.com/feeds/all
+
+# ============================================================================
+# NUCLEAR & FUSION
+# ============================================================================
+
+# World Nuclear News
+https://www.world-nuclear-news.org/RSS/RSSFeeds.aspx
+
+# Nuclear Engineering International
+https://www.neimagazine.com/rss/news
+
+# ============================================================================
+# NEUROTECHNOLOGY & BRAIN-COMPUTER INTERFACES
+# ============================================================================
+
+# Neuroscience News
+https://neurosciencenews.com/feed/
+
+# BCI Society
+# (Check for RSS availability)
+
+# ============================================================================
+# GENERAL DEEP TECH
+# ============================================================================
+
+# MIT Technology Review - Main
+https://www.technologyreview.com/feed/
+
+# IEEE Spectrum - Main
+https://spectrum.ieee.org/feeds/feed.rss
+
+# TechCrunch - Hardware
+https://techcrunch.com/category/hardware/feed/
+
+# Ars Technica - Science
+https://feeds.arstechnica.com/arstechnica/science
+
+# Phys.org - Main
+https://phys.org/rss-feed/
+
+# ScienceDaily
+https://www.sciencedaily.com/rss/all.xml
+
+# New Scientist
+https://www.newscientist.com/feed/home
+
+# Scientific American
+https://www.scientificamerican.com/rss/
+
+# Nature News
+https://www.nature.com/nature.rss
+
+# Science Magazine News
+https://www.science.org/rss/news_current.xml
+
+# ============================================================================
+# VENTURE CAPITAL & DEEP TECH FUNDING
+# ============================================================================
+
+# Crunchbase News - Deep Tech
+https://news.crunchbase.com/feed/
+
+# PitchBook News
+https://pitchbook.com/news/feed
+
+# TechCrunch - Venture Capital
+https://techcrunch.com/category/venture/feed/
+
+# ============================================================================
+# PHOTONICS & OPTICS
+# ============================================================================
+
+# Optics.org
+https://optics.org/news/rss
+
+# Photonics.com
+https://www.photonics.com/rss.aspx
+
+# ============================================================================
+# 3D PRINTING & ADDITIVE MANUFACTURING
+# ============================================================================
+
+# 3D Printing Industry
+https://3dprintingindustry.com/feed/
+
+# Fabbaloo
+https://www.fabbaloo.com/feed
+
+# ============================================================================
+# AGRICULTURAL TECHNOLOGY
+# ============================================================================
+
+# AgFunder News
+https://agfundernews.com/feed
+
+# The Spoon - AgTech
+https://thespoon.tech/category/agtech/feed/
