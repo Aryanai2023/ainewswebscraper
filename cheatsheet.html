@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS Certified Cloud Practitioner (CLF-C02) — Professional Cheat Sheet</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Professional font (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root { color-scheme: light; }
+    html, body { height: 100%; }
+    body{
+      font-family: Inter, Tahoma, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background: #f6f7fb;
+      color: #0f172a;
+    }
+
+    /* Subtle, professional card look */
+    .card{
+      background: #ffffff;
+      border: 1px solid rgba(2, 6, 23, .08);
+      box-shadow: 0 10px 24px rgba(2, 6, 23, .06);
+    }
+
+    /* Cleaner headings */
+    h1,h2,h3{ letter-spacing: -0.02em; }
+
+    /* “Key” pill */
+    .pill{
+      border: 1px solid rgba(255,255,255,.22);
+      background: rgba(255,255,255,.12);
+      backdrop-filter: blur(8px);
+    }
+
+    /* Better bullets spacing */
+    .tight li{ margin-top: .3rem; }
+    .tight li:first-child{ margin-top: 0; }
+
+    /* Print */
+    @media print{
+      body{ background:#fff; }
+      .card{ box-shadow:none !important; }
+      .no-print{ display:none !important; }
+      .print-break{ break-inside: avoid; page-break-inside: avoid; }
+      a{ color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-slate-950 text-white">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 py-8">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-slate-300">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            Foundation • CLF-C02
+          </div>
+          <h1 class="mt-2 text-2xl sm:text-3xl font-extrabold">AWS Certified Cloud Practitioner</h1>
+          <p class="mt-1 text-sm text-slate-300">
+            Clean, high-yield revision sheet (concepts, security, services, billing).
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="pill text-xs font-semibold px-3 py-1.5 rounded-full">Cheat Sheet</span>
+          <span class="pill text-xs font-semibold px-3 py-1.5 rounded-full">Last-minute review</span>
+          <span class="pill text-xs font-semibold px-3 py-1.5 rounded-full no-print">Tip: Ctrl+P to print</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 sm:px-8 py-10">
+    <!-- Exam Snapshot -->
+    <section class="card rounded-2xl p-6 print-break">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="lg:col-span-2">
+          <h2 class="text-lg font-bold text-slate-900">Exam Snapshot</h2>
+          <p class="mt-1 text-sm text-slate-600">
+            Most questions are scenario-based. Pick the best managed option that matches the requirement.
+          </p>
+
+          <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+              <div class="text-sm font-semibold text-slate-800">High-yield decision rules</div>
+              <ul class="mt-2 text-sm text-slate-700 list-disc list-inside tight">
+                <li>Less ops → managed services (RDS, DynamoDB, CloudFront).</li>
+                <li>Identity/permissions → IAM users, groups, roles, policies.</li>
+                <li>Web exploits (Layer 7) → AWS WAF. DDoS → AWS Shield.</li>
+                <li>Steady workloads → Savings Plans/RIs. Interruptible → Spot.</li>
+              </ul>
+            </div>
+
+            <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+              <div class="text-sm font-semibold text-slate-800">Rapid definitions</div>
+              <ul class="mt-2 text-sm text-slate-700 list-disc list-inside tight">
+                <li><strong>Region</strong>: geographic area with multiple AZs.</li>
+                <li><strong>AZ</strong>: isolated data centers for fault tolerance.</li>
+                <li><strong>Edge</strong>: CDN points of presence for low latency.</li>
+                <li><strong>IAM</strong>: global identity and access management.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-gradient-to-br from-indigo-600 to-slate-950 text-white p-5">
+          <div class="text-sm font-semibold">Domain weights</div>
+
+          <div class="mt-3 space-y-3 text-sm">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-white/90">Cloud Concepts</span><span class="font-bold">24%</span>
+              </div>
+              <div class="mt-1 h-2 bg-white/15 rounded-full overflow-hidden">
+                <div class="h-2 bg-white/70 w-[24%] rounded-full"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-white/90">Security & Compliance</span><span class="font-bold">30%</span>
+              </div>
+              <div class="mt-1 h-2 bg-white/15 rounded-full overflow-hidden">
+                <div class="h-2 bg-white/70 w-[30%] rounded-full"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-white/90">Technology & Services</span><span class="font-bold">34%</span>
+              </div>
+              <div class="mt-1 h-2 bg-white/15 rounded-full overflow-hidden">
+                <div class="h-2 bg-white/70 w-[34%] rounded-full"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-white/90">Billing & Support</span><span class="font-bold">12%</span>
+              </div>
+              <div class="mt-1 h-2 bg-white/15 rounded-full overflow-hidden">
+                <div class="h-2 bg-white/70 w-[12%] rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 rounded-xl bg-white/10 p-3 text-xs leading-relaxed">
+            <div class="font-semibold">Well-Architected pillars</div>
+            <div class="mt-1 text-white/90">
+              Operational Excellence • Security • Reliability • Performance Efficiency • Cost Optimization
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Domains -->
+    <section class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <!-- Domain 1 -->
+      <article class="card rounded-2xl p-6 border-t-8 border-blue-600 print-break">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-extrabold text-slate-900">Domain 1: Cloud Concepts</h3>
+            <p class="text-sm text-slate-600 mt-1">What cloud is, why it’s used, and service models.</p>
+          </div>
+          <span class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-100 px-3 py-1.5 rounded-full">24%</span>
+        </div>
+
+        <div class="mt-5 space-y-4 text-sm text-slate-700">
+          <div class="rounded-xl bg-blue-50 border border-blue-100 p-4">
+            <div class="font-semibold text-blue-900">Cloud computing</div>
+            <div class="mt-1">On-demand IT resources over the internet with pay-as-you-go pricing.</div>
+          </div>
+
+          <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+            <div class="font-semibold text-slate-900">Six advantages</div>
+            <ul class="mt-2 list-disc list-inside tight">
+              <li>Trade capital expense for operating expense</li>
+              <li>Economies of scale</li>
+              <li>Elasticity (stop guessing capacity)</li>
+              <li>Speed and agility</li>
+              <li>No data center management</li>
+              <li>Go global quickly</li>
+            </ul>
+          </div>
+
+          <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+            <div class="font-semibold text-slate-900">Service models</div>
+            <div class="mt-2 overflow-x-auto">
+              <table class="w-full text-sm border-collapse">
+                <thead>
+                  <tr class="text-left text-slate-600">
+                    <th class="py-2 pr-3">Model</th>
+                    <th class="py-2 pr-3">You manage</th>
+                    <th class="py-2">Example</th>
+                  </tr>
+                </thead>
+                <tbody class="text-slate-800">
+                  <tr class="border-t border-slate-200">
+                    <td class="py-2 pr-3 font-semibold">IaaS</td>
+                    <td class="py-2 pr-3">OS, apps, configs</td>
+                    <td class="py-2">Amazon EC2</td>
+                  </tr>
+                  <tr class="border-t border-slate-200">
+                    <td class="py-2 pr-3 font-semibold">PaaS</td>
+                    <td class="py-2 pr-3">Apps and data</td>
+                    <td class="py-2">AWS Elastic Beanstalk</td>
+                  </tr>
+                  <tr class="border-t border-slate-200">
+                    <td class="py-2 pr-3 font-semibold">SaaS</td>
+                    <td class="py-2 pr-3">Usage/config only</td>
+                    <td class="py-2">Managed business apps</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Domain 2 -->
+      <article class="card rounded-2xl p-6 border-t-8 border-rose-600 print-break">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-extrabold text-slate-900">Domain 2: Security & Compliance</h3>
+            <p class="text-sm text-slate-600 mt-1">Shared responsibility, identity, encryption, network controls.</p>
+          </div>
+          <span class="text-xs font-bold text-rose-700 bg-rose-50 border border-rose-100 px-3 py-1.5 rounded-full">30%</span>
+        </div>
+
+        <div class="mt-5 space-y-4 text-sm text-slate-700">
+          <div class="rounded-xl bg-rose-50 border border-rose-100 p-4">
+            <div class="font-semibold text-rose-900">Shared responsibility</div>
+            <ul class="mt-2 list-disc list-inside tight">
+              <li><strong>AWS</strong>: security of the cloud (facilities, hardware, core infrastructure).</li>
+              <li><strong>You</strong>: security in the cloud (IAM, data, OS patching, network settings).</li>
+              <li>More managed/serverless = less ops responsibility for you.</li>
+            </ul>
+          </div>
+
+          <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+            <div class="font-semibold text-slate-900">IAM essentials</div>
+            <ul class="mt-2 list-disc list-inside tight">
+              <li>Users = people. Roles = assumed identities for services/apps.</li>
+              <li>Policies define permissions. Groups organize users.</li>
+              <li>Least privilege + MFA (especially root user).</li>
+            </ul>
+          </div>
+
+          <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+            <div class="font-semibold text-slate-900">Know these differences</div>
+            <ul class="mt-2 list-disc list-inside tight">
+              <li><strong>Security Groups</strong>: instance-level firewall, stateful.</li>
+              <li><strong>NACLs</strong>: subnet-level firewall, stateless.</li>
+              <li><strong>AWS WAF</strong>: web app protection (Layer 7).</li>
+              <li><strong>AWS Shield</strong>: DDoS protection.</li>
+              <li><strong>AWS KMS</strong>: managed encryption keys.</li>
+              <li><strong>AWS Artifact</strong>: compliance reports and agreements.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Domain 3 -->
+      <article class="card rounded-2xl p-6 border-t-8 border-emerald-600 print-break">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-extrabold text-slate-900">Domain 3: Technology & Services</h3>
+            <p class="text-sm text-slate-600 mt-1">Core services, infrastructure, monitoring and governance.</p>
+          </div>
+          <span class="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-100 px-3 py-1.5 rounded-full">34%</span>
+        </div>
+
+        <div class="mt-5 space-y-4 text-sm text-slate-700">
+          <div class="rounded-xl bg-emerald-50 border border-emerald-100 p-4">
+            <div class="font-semibold text-emerald-900">Global infrastructure</div>
+            <ul class="mt-2 list-disc list-inside tight">
+              <li><strong>Region</strong>: multiple AZs</li>
+              <li><strong>AZ</strong>: isolation for availability</li>
+              <li><strong>Edge</strong>: CloudFront delivery points</li>
+            </ul>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+              <div class="font-semibold text-slate-900">Compute & scaling</div>
+              <ul class="mt-2 list-disc list-inside tight">
+                <li><strong>EC2</strong>: virtual servers</li>
+                <li><strong>Lambda</strong>: serverless functions</li>
+                <li><strong>ELB</strong>: distribute traffic</li>
+                <li><strong>Auto Scaling</strong>: scale out/in</li>
+              </ul>
+            </div>
+
+            <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+              <div class="font-semibold text-slate-900">Storage & databases</div>
+              <ul class="mt-2 list-disc list-inside tight">
+                <li><strong>S3</strong>: object storage, very high durability</li>
+                <li><strong>EBS</strong>: block storage for EC2</li>
+                <li><strong>RDS</strong>: managed relational</li>
+                <li><strong>DynamoDB</strong>: managed NoSQL</li>
+              </ul>
+            </div>
+
+            <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+              <div class="font-semibold text-slate-900">Networking & delivery</div>
+              <ul class="mt-2 list-disc list-inside tight">
+                <li><strong>VPC</strong>: private network</li>
+                <li><strong>Route 53</strong>: DNS</li>
+                <li><strong>CloudFront</strong>: CDN</li>
+                <li><strong>Direct Connect</strong>: private link</li>
+              </ul>
+            </div>
+
+            <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+              <div class="font-semibold text-slate-900">Messaging & IaC</div>
+              <ul class="mt-2 list-disc list-inside tight">
+                <li><strong>SQS</strong>: queue (decouple)</li>
+                <li><strong>SNS</strong>: pub/sub notifications</li>
+                <li><strong>CloudFormation</strong>: infrastructure as code</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+            <div class="font-semibold text-slate-900">Monitoring & auditing</div>
+            <ul class="mt-2 list-disc list-inside tight">
+              <li><strong>CloudWatch</strong>: metrics, logs, alarms</li>
+              <li><strong>CloudTrail</strong>: API activity history</li>
+              <li><strong>Trusted Advisor</strong>: best-practice checks</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Domain 4 -->
+      <article class="card rounded-2xl p-6 border-t-8 border-amber-600 print-break">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-extrabold text-slate-900">Domain 4: Billing, Pricing & Support</h3>
+            <p class="text-sm text-slate-600 mt-1">Pricing models, billing tools, support plan intent.</p>
+          </div>
+          <span class="text-xs font-bold text-amber-700 bg-amber-50 border border-amber-100 px-3 py-1.5 rounded-full">12%</span>
+        </div>
+
+        <div class="mt-5 space-y-4 text-sm text-slate-700">
+          <div class="rounded-xl bg-amber-50 border border-amber-100 p-4">
+            <div class="font-semibold text-amber-900">EC2 pricing</div>
+            <ul class="mt-2 list-disc list-inside tight">
+              <li><strong>On-Demand</strong>: short-term or unpredictable</li>
+              <li><strong>Savings Plans / RIs</strong>: steady usage, discounts with commitment</li>
+              <li><strong>Spot</strong>: cheapest, can be interrupted</li>
+            </ul>
+          </div>
+
+          <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+            <div class="font-semibold text-slate-900">Billing tools</div>
+            <ul class="mt-2 list-disc list-inside tight">
+              <li><strong>Organizations</strong>: consolidated billing</li>
+              <li><strong>Budgets</strong>: alerts on thresholds</li>
+              <li><strong>Cost Explorer</strong>: analyze spend</li>
+              <li><strong>TCO Calculator</strong>: estimate migration savings</li>
+            </ul>
+          </div>
+
+          <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+            <div class="font-semibold text-slate-900">Support plans</div>
+            <ul class="mt-2 list-disc list-inside tight">
+              <li><strong>Basic</strong>: docs + forums</li>
+              <li><strong>Developer</strong>: dev/testing support</li>
+              <li><strong>Business</strong>: production, 24/7 support</li>
+              <li><strong>Enterprise</strong>: mission-critical, TAM</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Rapid recall -->
+    <section class="mt-8 card rounded-2xl p-6 print-break">
+      <h2 class="text-lg font-bold text-slate-900">Rapid Recall (Exam Traps)</h2>
+      <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-700">
+        <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+          <div class="font-semibold text-slate-900">Pick the right security service</div>
+          <ul class="mt-2 list-disc list-inside tight">
+            <li>Block web exploits → AWS WAF</li>
+            <li>DDoS protection → AWS Shield</li>
+            <li>Encryption keys → AWS KMS</li>
+            <li>Permissions → IAM policies / roles</li>
+          </ul>
+        </div>
+        <div class="rounded-xl bg-slate-50 border border-slate-100 p-4">
+          <div class="font-semibold text-slate-900">Ops vs governance</div>
+          <ul class="mt-2 list-disc list-inside tight">
+            <li>Operational monitoring → CloudWatch</li>
+            <li>Audit trail of actions → CloudTrail</li>
+            <li>Cost/security/perf checks → Trusted Advisor</li>
+            <li>Decouple architecture → SQS + SNS</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-8 text-center text-xs text-slate-500 no-print">
+      Want it even cleaner? I can make a one-page “ultra compact” print layout.
+    </footer>
+  </main>
+</body>
+</html>
